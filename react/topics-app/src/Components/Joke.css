@@ -1,0 +1,46 @@
+.joke-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  break-inside: avoid;
+  margin-bottom: 20px;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+.joke-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.joke-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+}
+
+.joke-content {
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.joke-title {
+  margin: 0 0 10px 0;
+  color: #34495e;
+  font-size: 1.2rem;
+}
+
+.joke-text {
+  color: #7f8c8d;
+  font-size: 1rem;
+  line-height: 1.5;
+}

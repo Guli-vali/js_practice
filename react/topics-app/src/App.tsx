@@ -3,10 +3,10 @@ import JokeList from './Components/JokeList';
 
 function App() {
   return (
-        <div>
-            <JokeList />
-        </div>
-    );
+    <div className="app-container">
+      <JokeList />
+    </div>
+  );
 }
 
 export default App;
